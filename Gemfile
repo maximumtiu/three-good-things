@@ -10,13 +10,10 @@ gem 'devise'
 gem 'haml-rails', '~> 0.9'
 
 group :development, :test do
+  gem 'rspec-rails', '~> 3.4'
   gem 'byebug'
   gem 'pry-rails'
   gem 'web-console', '~> 2.0'
   gem 'dotenv-rails'
   gem 'spring'
-end
-
-group :test do
-  gem 'rspec-rails', '~> 3.4'
 end
