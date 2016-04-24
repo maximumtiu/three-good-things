@@ -1,2 +1,11 @@
-.container
-  Hello world
+#header
+  %h1#jumbo 3 Good Things
+  %p A trick to maintain happiness:
+  %p Every night before bed, write down three good things about your day.
+  %p You'll focus on happy thoughts and enjoy life that much more.
+  %a{href: '/users/sign_up'}
+    - if current_user
+      %button.btn.btn-primary#log Log Today
+      %button.btn.btn-primary#view View Days
+    - else
+      %button.btn.btn-primary#get-started Get Started

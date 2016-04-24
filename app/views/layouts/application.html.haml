@@ -7,6 +7,26 @@
     = javascript_include_tag 'application', 'data-turbolinks-track' => true
     = csrf_meta_tags
   %body
-    %p.notice= notice
-    %p.alert= alert
+    %nav.navbar.navbar-default.navbar-fixed-top
+      .container
+        .navbar-header
+          %a.navbar-brand{href: '/'} 3 Good Things
+        .pull-right
+          %ul.nav.navbar-nav
+            - if current_user
+              %li.dropdown
+                %a.dropdown-toggle{href: '#', 'data-toggle' => 'dropdown', 'role' => 'button', 'aria-haspopup' => 'true', 'aria-expanded' => 'false'}
+                  Welcome, #{current_user.email}
+                  %ul.dropdown-menu
+                    %li
+                      %a{href: '#'} Your Good Things
+                    %li
+                      %a{href: '#'} Edit Profile
+            - else
+              %li
+                %a{href: '/users/sign_in'} Sign In
+    - if notice
+      %p.notice= notice
+    - if alert
+      %p.alert= alert
     = yield

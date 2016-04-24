@@ -1,2 +1,14 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
+@import "landing.scss";
+
+.navbar {
+  .dropdown-menu {
+    width: 100%;
+  }
+}
+
+body {
+  margin-top: 50px;
+  font-weight: 200;
+}
