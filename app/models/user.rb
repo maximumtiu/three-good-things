@@ -5,4 +5,8 @@ class User < ActiveRecord::Base
   # :confirmable, :lockable, :timeoutable and :omniauthable
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable
+
+  def phone_number=(value)
+    value.delete('-').delete('.').delete('(').delete(')')
+  end
 end
