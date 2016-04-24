@@ -1,6 +1,7 @@
-@import "bootstrap-sprockets";
-@import "bootstrap";
-@import "landing.scss";
+@import 'bootstrap-sprockets';
+@import 'bootstrap';
+@import 'landing.scss';
+@import 'days.scss';
 
 .navbar {
   .dropdown-menu {

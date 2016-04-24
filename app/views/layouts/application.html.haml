@@ -19,14 +19,14 @@
                   Welcome, #{current_user.email}
                   %ul.dropdown-menu
                     %li
-                      %a{href: '#'} Your Good Things
+                      %a{href: '/days'} Your Good Things
                     %li
-                      %a{href: '#'} Edit Profile
+                      %a{href: '/users/edit'} Edit Profile
             - else
               %li
                 %a{href: '/users/sign_in'} Sign In
     - if notice
-      %p.notice= notice
+      %p.notice = notice
     - if alert
-      %p.alert= alert
+      %p.alert = alert
     = yield

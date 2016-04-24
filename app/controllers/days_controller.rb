@@ -4,7 +4,7 @@ class DaysController < ApplicationController
 
   def index
     @days = current_user.days
-    @things = Thing.all.find_all { |thing| @days.ids.include? thing.id }
+    @things = Thing.all.find_all { |thing| @days.ids.any? { |day_id| day_id == thing.day_id } }
   end
 
   def show
