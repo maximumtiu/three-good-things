@@ -1,6 +1,7 @@
 var Day = React.createClass({
   propTypes: {
     date: React.PropTypes.string,
+    things: React.PropTypes.array
   },
 
   translateDate: function(date_str) {
@@ -12,9 +13,10 @@ var Day = React.createClass({
   },
 
   render: function() {
-    var things = this.props.things.map(function(thing) {
+    things = this.props.things
+    var things = things.map(function(thing) {
       return (
-        <Thing thing={thing} key={thing.id} />
+        <Thing thing={thing} index={things.indexOf(thing) + 1} key={thing.id} />
       );
     });
 
