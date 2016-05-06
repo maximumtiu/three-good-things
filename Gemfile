@@ -2,7 +2,7 @@ source 'https://rubygems.org'
 
 ruby '2.3.0'
 
-gem 'rails', '4.2.5'
+gem 'rails', '>= 5.0.0.beta4'
 gem 'pg'
 gem 'sass-rails', '~> 5.0'
 gem 'bootstrap-sass', '~> 3.3.6'
@@ -15,13 +15,13 @@ gem 'react-rails', '~> 1.6.0'
 group :development do
   gem 'better_errors'
   gem 'react-rails-hot-loader'
+  gem 'web-console', '~> 2.0'
 end
 
 group :development, :test do
-  gem 'rspec-rails', '~> 3.4'
+  gem 'rspec-rails', '>= 3.5.0.beta3'
   gem 'byebug'
   gem 'pry-rails'
-  gem 'web-console', '~> 2.0'
   gem 'dotenv-rails'
   gem 'spring'
 end
