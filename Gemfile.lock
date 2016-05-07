@@ -62,7 +62,7 @@ GEM
     concurrent-ruby (1.0.2)
     connection_pool (2.2.0)
     debug_inspector (0.0.2)
-    devise (4.0.0)
+    devise (4.1.0)
       bcrypt (~> 3.0)
       orm_adapter (~> 0.1)
       railties (>= 4.1.0, < 5.1)
@@ -164,7 +164,7 @@ GEM
       em-websocket
       rails
       react-rails
-    responders (2.1.2)
+    responders (2.2.0)
       railties (>= 4.2.0, < 5.1)
     rspec-core (3.5.0.beta3)
       rspec-support (= 3.5.0.beta3)
@@ -227,7 +227,7 @@ DEPENDENCIES
   better_errors
   bootstrap-sass (~> 3.3.6)
   byebug
-  devise
+  devise (>= 4.1.0)
   dotenv-rails
   haml-rails (~> 0.9)
   jquery-rails
