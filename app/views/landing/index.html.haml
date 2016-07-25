@@ -3,9 +3,12 @@
   %p A trick to maintain happiness:
   %p Every night before bed, write down three good things about your day.
   %p You'll focus on happy thoughts and enjoy life that much more.
-  %a{href: '/users/sign_up'}
-    - if current_user
+  
+  - if current_user
+    %a{href: '/days/new'}
       %button.btn.btn-primary#log Log Today
+    %a{href: '/days'}
       %button.btn.btn-primary#view View Days
-    - else
+  - else
+    %a{href: '/users/sign_up'}
       %button.btn.btn-primary#get-started Get Started
