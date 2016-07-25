@@ -1,25 +1,25 @@
 source 'https://rubygems.org'
 
-ruby '2.3.0'
+ruby '2.3.1'
 
-gem 'rails', '>= 5.0.0.beta4'
+gem 'rails', '~> 5.0.0'
 gem 'pg'
-gem 'sass-rails', '~> 5.0'
-gem 'bootstrap-sass', '~> 3.3.6'
-gem 'uglifier', '>= 1.3.0'
+gem 'sass-rails'
+gem 'bootstrap-sass'
+gem 'uglifier'
 gem 'jquery-rails'
-gem 'devise', '>= 4.1.0'
-gem 'haml-rails', '~> 0.9'
-gem 'react-rails', '~> 1.6.0'
+gem 'devise'
+gem 'haml-rails'
+gem 'react-rails'
 
 group :development do
   gem 'better_errors'
   gem 'react-rails-hot-loader'
-  gem 'web-console', '~> 2.0'
+  gem 'web-console'
 end
 
 group :development, :test do
-  gem 'rspec-rails', '>= 3.5.0.beta3'
+  gem 'rspec-rails'
   gem 'byebug'
   gem 'pry-rails'
   gem 'dotenv-rails'
