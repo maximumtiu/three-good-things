@@ -11,6 +11,9 @@ class DaysController < ApplicationController
     @day.things
   end
 
+  def new
+  end
+
   def create
     user_id = current_user.id
     date = Date.today
